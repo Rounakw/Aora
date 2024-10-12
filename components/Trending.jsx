@@ -30,8 +30,8 @@ const TrendingItem = ({ activeItem, item }) => {
             duration={500}>
             {trendingVideoPlay ? (
                 <Video
-                    source={{ uri: "https://www.w3schools.com/html/mov_bbb.mp4" }}
-                    className="w-52 h-72 rounded-[35px] mt-3 bg-white/40"
+                    source={{ uri: item.video }}
+                    className="w-52 h-72 rounded-[35px] mt-3 bg-black-200"
                     resizeMode={ResizeMode.CONTAIN}
                     useNativeControls
                     shouldPlay={true}
@@ -48,7 +48,7 @@ const TrendingItem = ({ activeItem, item }) => {
                     onPress={() => setTrendingVideoPlay(true)}>
                     <ImageBackground
                         source={{ uri: item.thumbnail }}
-                        className="w-52 h-72 rounded-[35px] my-5 overflow-hidden shadow-lg shadow-black/40"
+                        className="w-52 h-72 rounded-[35px] my-5 overflow-hidden shadow-lg bg-black-109 shadow-black/40"
                         resizeMode='cover' />
                     <Image
                         source={icons.play}
