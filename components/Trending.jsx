@@ -30,7 +30,7 @@ const TrendingItem = ({ activeItem, item }) => {
             duration={500}>
             {trendingVideoPlay ? (
                 <Video
-                    source={{ uri: item.video }}
+                    source={{ uri: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"}}
                     className="w-52 h-72 rounded-[35px] mt-3 bg-black-200"
                     resizeMode={ResizeMode.CONTAIN}
                     useNativeControls

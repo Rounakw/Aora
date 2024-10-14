@@ -4,22 +4,23 @@
     "slug": "aora",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/AppLogo.png",
     "scheme": "aora",
     "userInterfaceStyle": "automatic",
     "splash": {
-      "image": "./assets/images/splash.png",
+      "image": "./assets/images/splashScreen.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "white"
     },
     "ios": {
       "supportsTablet": true,
-      "package": "com.jsm.aora"
+      "package": "com.jsm.aora",
+      "bundleIdentifier": "com.jsm.aora"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "foregroundImage": "./assets/images/AppLogo.png",
+        "backgroundColor": "red"
       },
       "package": "com.jsm.aora"
     },
@@ -33,6 +34,11 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "d7355ab4-de3b-4059-a6ce-12366838fa42"
+      }
     }
   }
 }
